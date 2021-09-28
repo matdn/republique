@@ -1,0 +1,208 @@
+:root{
+    --gris-- : rgb(71, 71, 71);
+    --tomato--: tomato;
+    --yellow--:#ffc537;
+    }
+
+*{
+   
+    margin: 0;
+    position: relative ;
+  
+}
+body{
+    background-color:#ffc537 ; 
+}
+
+#menu{
+
+    font-family: moret, serif;
+    font-size: 20px;
+    color: tomato;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    z-index: 8;
+}
+
+h2{
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.title{
+
+    height: 150px;
+    font-family: moret, serif;
+    font-size: 70px;
+    color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#dark{
+    z-index: 100;
+}
+
+img {
+    margin:25px;
+    height: 500px;
+    opacity: 0.8;
+}
+
+#masonry{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    
+  
+}
+#masonry img:hover {
+    transform: scale(1.09);
+    opacity: 1;
+    transition:  1s;
+}
+#lightbox{
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:1000;
+    background-color: rgb(0, 0, 0, 0.9);
+    visibility: hidden;
+    
+}
+#lightbox.active{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+.dm{
+    display: flex;
+    justify-content: center;
+}
+#darkmode{
+    
+  
+    width: 140px;
+  
+}
+
+.background{
+    background-color: #ffc537;
+}
+.darkapp .background{
+    
+    background-color: black;
+    
+}
+.darkapp .title{
+    color: white;
+}
+.darkapp footer{
+    background-color: black;
+}
+.darkapp #darkmode{
+    
+    color: white;
+    border: solid 1px white;
+}
+footer{
+    
+    background-color:  tomato;
+    color: #ffc537;
+    font-family: moret, serif;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+    
+ h3{ 
+
+    font-size: 25px;
+    color: #3b331c;
+     
+} 
+.form_comment{
+    
+    
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap:10px;
+    padding: 50px;
+}
+
+#pseudo{
+    font-family: moret, serif;
+    font-size: 15px;
+    border: none;
+    background-color: none;
+}
+#message{
+    font-family: moret, serif;
+    font-size: 15px;
+    height: 60px;
+    width: 100%;
+}
+#poster{
+    width: 100%;
+    height: 40px;
+    font-family: moret, serif;
+    font-size: 15px;
+    background-color: tomato;
+    border: none;
+}
+
+.com{
+    padding-left:60px;
+    display:flex;
+    
+}
+.com #date{
+    padding-right: 20px;
+    
+}
+.deletebutton{
+    height: 30px;
+    width: 30px;
+    background:none;
+    color: tomato;
+
+}
+.comment{
+    
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: moret, serif;
+    font-size: 25px;
+    color: var(--gris--);
+   
+}
+@media screen and (max-width:1280px)
+{
+  
+    #jump {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 350px;
+    }
+
+    #masonry img:hover {
+    transform: none;
+    opacity: 1;
+    transition:  none;
+    }
+}

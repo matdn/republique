@@ -1,0 +1,243 @@
+*{
+ margin: 0;  
+}
+
+.parallax{
+    
+    background-image: url(img/histparallax.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;   
+}
+
+header{
+    background-color: #ffc537;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+#moon img{
+    top:25px;
+    width:40px;
+    position: absolute;
+    right: 40px;
+
+}
+#sun{
+    visibility: hidden;
+}
+#sun img{
+    top:25px;
+    width:40px;
+    position: absolute;
+    right: 40px;
+
+}
+
+.title{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a{
+    margin: 20px;
+    display: flex;  
+    align-items: center;
+    font-size: 18px;
+}
+
+header h3{
+    color: tomato;
+    margin: 20px;
+    font-size: 30px ;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: tomato;
+    font-family: moret, serif;
+    font-size: 80px;
+  
+}
+
+#menu{
+
+    font-family: moret, serif;
+    font-size: 20px;
+    color: #ffc537;
+    display: flex;
+    height: 150px;
+    width: 100%;
+}
+
+#content{
+    background-color:beige ;
+    color: rgb(71, 71, 71);
+    
+}
+
+
+.pstory1{
+    
+    height: 20vh;
+    font-family: moret, serif;
+    font-size: 40px;
+    color: #ffc537;
+    background-color: tomato;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.statue{
+   
+    display:flex;
+    margin:30px;
+    justify-content: center;
+    gap:50px;
+    
+    
+}
+.statue img{
+
+    height: 800px;
+
+}
+#box1{
+    
+   
+    font-family: moret, serif;
+    font-size: 35px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    
+}
+.story2{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    
+} 
+#box2{
+    
+    font-family: moret, serif;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+#slider{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin-left: 20px;
+}
+
+#slide{
+    position: relative;
+    
+}
+
+#precedent,
+#suivant {
+    height: 50px;
+    background-color: grey;
+    color: honeydew;
+    cursor: pointer;
+    font-size: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+} 
+header a{
+    color: tomato;
+}
+
+.story3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    
+} 
+#box3{
+    
+    font-family: moret, serif;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    margin: 40px;
+    margin-top: 10%;
+    
+    
+}
+.dark #content{
+    background-color:rgb(71, 71, 71);
+    color: beige;
+}
+.dark header{
+    background-color: rgb(71, 71, 71);
+    
+}
+.dark header a{
+    color: beige;
+}
+.dark .pstory1{
+    background-color: beige;
+    color: rgb(71, 71, 71);
+}
+footer{
+    
+    background-color: rgb(71, 71, 71);
+    color: beige;
+    font-family: moret, serif;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:1280px)
+{
+    .statue{
+        flex-wrap: wrap;
+    }
+    .pstory1{
+        height: 300px;  
+    }
+    .story2{
+        flex-wrap:wrap-reverse;
+    }
+    .story3{
+       flex-wrap:wrap;
+       height: auto;
+   }
+   #slide{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 80%;
+}
+    #slide2{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 80%;
+    }
+    .map{
+        margin: 0px;
+    }
+}
